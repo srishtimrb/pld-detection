@@ -1,1 +1,2 @@
-https://detect.roboflow.com/?model=cotton-insect-detection&version=3&api_key=LaZ6W4vU6FPHjPG7nwxo#
+
+https://detect.roboflow.com/?model=cotton-insect-detection&version=3&api_key=LaZ6W4vU6FPHjPG7nwxo# 
