@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/hld_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_700"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/action_bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Relatime Detection"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-30dp"/>
+
+    <FrameLayout
+        android:id="@+id/hld_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@+id/hld_action_bar">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F7FAFC">
+
+        <Button
+            android:id="@+id/btn_precaution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precautions"
+            android:background="#606FC7"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="16dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>
